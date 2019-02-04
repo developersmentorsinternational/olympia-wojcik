@@ -1,0 +1,18 @@
+
+/*Mixins */
+
+.box-sizing (@type: border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing:    @type;
+    box-sizing:         @type;
+}
+
+.border-test() {
+	border: 2px dashed red;
+}
+
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
