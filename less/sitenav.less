@@ -2,18 +2,28 @@
     background-color: @header-bg;
     color: @white;
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-between;
+    position: fixed;
+    height: 10rem;
+    padding-top: 2rem;
+    width: 100%;
+    .test-border(black);
     
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
         font-family: @logo-font;
     }
 
     nav {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+
         a {
             color: white;
             text-decoration: none;
+            padding: 0 25px;
         }
     }
 
@@ -21,8 +31,10 @@
         background-color: white;
         color: @custom-blue;
         height: 3.3rem;
-        width: 180px;
+        width: 160px;
         text-align: center;
         padding-top: 5px;
+        margin-right: 10px;
     }
 }
+
