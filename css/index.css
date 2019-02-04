@@ -134,9 +134,13 @@ table {
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 html {
   font-size: 62.5%;
+}
+body {
+  background: #57C6FF;
 }
 html,
 body,
@@ -160,8 +164,8 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
-h4 {
-  font-size: 2.5rem;
+h3 {
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 p,
@@ -174,39 +178,32 @@ li {
 }
 .container {
   font-family: 'Open Sans', Arial, sans-serif;
-  background-image: linear-gradient(90deg, #00AFC1 60%, #FFF 50%);
   max-width: 100%;
-  width: 100%;
+  width: 1500px;
+  height: 100%;
   margin: 0 auto;
   line-height: 1.3;
-  padding: 0 10% 0 20%;
-  border: 5px dashed red;
 }
 .blue-container {
   color: #FFFFFF;
-  border: 5px dashed blue;
   height: 500px;
   width: 100%;
 }
 .white-container {
   background-color: white;
   padding-left: 20px;
-  border-top-left-radius: 40%;
+  border-top-left-radius: 25%;
   margin-top: 60px;
   width: 100%;
 }
-button {
-  border: 5px dashed red;
-}
 .site-nav {
-  background-color: #00AFC1;
+  background-color: #57C6FF;
   color: #FFFFFF;
   display: flex;
   position: fixed;
   height: 10rem;
   padding-top: 2rem;
   width: 100%;
-  border: 5px dashed black;
 }
 .site-nav h1 {
   font-size: 2.5rem;
@@ -225,15 +222,15 @@ button {
 }
 .site-nav .button {
   background-color: white;
-  color: #00AFC1;
+  color: #57C6FF;
   height: 3.3rem;
   width: 160px;
   text-align: center;
   padding-top: 5px;
-  margin-right: 10px;
+  margin-left: 17%;
 }
 .banner {
-  background-color: #00AFC1;
+  background-color: #57C6FF;
   display: flex;
   width: 100%;
   height: 45rem;
@@ -242,13 +239,11 @@ button {
 .banner .description {
   height: 45rem;
   width: 100%;
-  border: 5px dashed purple;
   padding: 3% 2% 4% 2%;
 }
 .banner .description h2 {
   font-weight: bold;
   font-size: 4rem;
-  border: 5px dashed yellow;
   margin-bottom: 20px;
 }
 .banner .carousel {
@@ -256,4 +251,32 @@ button {
 }
 .banner .carousel img {
   width: 840px;
+}
+.countries {
+  padding-top: 20px;
+  text-align: center;
+}
+.countries ul {
+  display: flex;
+  justify-content: center;
+}
+.countries ul li {
+  padding: 0 3% 0 3%;
+}
+.features {
+  width: 100%;
+  display: flex;
+  padding: 2% 15% 0 15%;
+  flex-direction: column;
+  align-items: center;
+}
+.features .feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 150px;
+}
+.features .feature p {
+  padding-left: 5%;
 }
