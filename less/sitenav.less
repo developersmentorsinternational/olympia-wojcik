@@ -2,39 +2,87 @@
     background-color: @header-bg;
     color: @white;
     display: flex;
-    // justify-content: space-between;
     position: fixed;
     height: 10rem;
-    padding-top: 2rem;
+    padding: 2rem 0 0 2%;
     width: 100%;
-    // .test-border(black);
     
-    h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        font-family: @logo-font;
-    }
 
-    nav {
-        display: flex;
+    @media @tablet {
         justify-content: center;
-        width: 40%;
+        height: 20rem;
+        width: 100%;
+    }
 
-        a {
-            color: white;
-            text-decoration: none;
-            padding: 0 25px;
+    @media @mobile {
+        .test-border;
+    }
+
+
+    .top-bar {
+        width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        
+        @media @tablet {
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+
         }
+
+        @media @mobile {
+            width: 90%;
+        }
+
+
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: @logo-font;
+            width: 35%;
+
+
+            @media @tablet {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            width: 40%;
+
+            @media @tablet {
+                width: 100%;
+                margin: 5% 0 5% 0;
+            }
+    
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 0 25px;
+
+            }
+        }
+    
+        .button {
+            background-color: white;
+            color: @custom-blue;
+            height: 3.3rem;
+            width: 200px;
+            text-align: center;
+            padding-top: 5px;
+            margin-right: 2%;
+
+            @media @tablet {
+                width: 100%;
+            }
+        }
+
     }
 
-    .button {
-        background-color: white;
-        color: @custom-blue;
-        height: 3.3rem;
-        width: 160px;
-        text-align: center;
-        padding-top: 5px;
-        margin-left: 17%;
-    }
 }
 

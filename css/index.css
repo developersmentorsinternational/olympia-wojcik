@@ -135,12 +135,13 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 html {
   font-size: 62.5%;
 }
 body {
-  background: #57C6FF;
+  background: #2D8DD6;
 }
 html,
 body,
@@ -179,67 +180,140 @@ li {
 .container {
   font-family: 'Open Sans', Arial, sans-serif;
   max-width: 100%;
-  width: 1500px;
-  height: 100%;
+  width: 1400px;
+  height: auto;
   margin: 0 auto;
   line-height: 1.3;
 }
 .blue-container {
   color: #FFFFFF;
-  height: 500px;
+  height: 395px;
   width: 100%;
+}
+@media (max-width: 1150px) {
+  .blue-container {
+    width: 100%;
+    height: 875px;
+  }
 }
 .white-container {
   background-color: white;
   padding-left: 20px;
-  border-top-left-radius: 25%;
+  border-top-left-radius: 20%;
   margin-top: 60px;
   width: 100%;
 }
+@media (max-width: 1150px) {
+  .white-container {
+    margin-top: -70px;
+  }
+}
 .site-nav {
-  background-color: #57C6FF;
+  background-color: #2D8DD6;
   color: #FFFFFF;
   display: flex;
   position: fixed;
   height: 10rem;
-  padding-top: 2rem;
+  padding: 2rem 0 0 2%;
   width: 100%;
 }
-.site-nav h1 {
+@media (max-width: 1150px) {
+  .site-nav {
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .site-nav {
+    border: 5px dashed red;
+  }
+}
+.site-nav .top-bar {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1150px) {
+  .site-nav .top-bar {
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .site-nav .top-bar {
+    width: 90%;
+  }
+}
+.site-nav .top-bar h1 {
   font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Comfortaa', Arial, sans-serif;
+  width: 35%;
 }
-.site-nav nav {
+@media (max-width: 1150px) {
+  .site-nav .top-bar h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+.site-nav .top-bar nav {
   display: flex;
   justify-content: center;
   width: 40%;
 }
-.site-nav nav a {
+@media (max-width: 1150px) {
+  .site-nav .top-bar nav {
+    width: 100%;
+    margin: 5% 0 5% 0;
+  }
+}
+.site-nav .top-bar nav a {
   color: white;
   text-decoration: none;
   padding: 0 25px;
 }
-.site-nav .button {
+.site-nav .top-bar .button {
   background-color: white;
-  color: #57C6FF;
+  color: #2D8DD6;
   height: 3.3rem;
-  width: 160px;
+  width: 200px;
   text-align: center;
   padding-top: 5px;
-  margin-left: 17%;
+  margin-right: 2%;
+}
+@media (max-width: 1150px) {
+  .site-nav .top-bar .button {
+    width: 100%;
+  }
 }
 .banner {
-  background-color: #57C6FF;
+  background-color: #2D8DD6;
   display: flex;
   width: 100%;
-  height: 45rem;
+  height: 70rem;
   padding-top: 10rem;
+}
+@media (max-width: 1150px) {
+  .banner {
+    padding-top: 20rem;
+    flex-direction: column;
+    width: 100%;
+    height: 85rem;
+  }
 }
 .banner .description {
   height: 45rem;
   width: 100%;
   padding: 3% 2% 4% 2%;
+}
+@media (max-width: 1150px) {
+  .banner .description {
+    padding: 5% 5% 0 5%;
+    height: 25rem;
+    order: 1;
+  }
 }
 .banner .description h2 {
   font-weight: bold;
@@ -249,24 +323,44 @@ li {
 .banner .carousel {
   width: 90%;
 }
+@media (max-width: 1150px) {
+  .banner .carousel {
+    width: 100%;
+    text-align: center;
+    background: white;
+    border-bottom-right-radius: 20%;
+    overflow: hidden;
+  }
+}
 .banner .carousel img {
-  width: 840px;
+  width: 650px;
 }
 .countries {
   padding-top: 20px;
   text-align: center;
+  width: 100%;
+}
+@media (max-width: 1150px) {
+}
+.countries h3 {
+  margin: 10px 0 15px 0;
 }
 .countries ul {
   display: flex;
   justify-content: center;
 }
 .countries ul li {
-  padding: 0 3% 0 3%;
+  padding: 0 5% 0 6%;
+}
+@media (max-width: 1150px) {
+  .countries ul li {
+    padding: 0 2% 0 3%;
+  }
 }
 .features {
   width: 100%;
   display: flex;
-  padding: 2% 15% 0 15%;
+  padding: 4% 15% 0 15%;
   flex-direction: column;
   align-items: center;
 }
@@ -276,6 +370,11 @@ li {
   align-items: center;
   width: 80%;
   height: 150px;
+}
+@media (max-width: 1150px) {
+  .features .feature {
+    margin: 6% 0 6% 0;
+  }
 }
 .features .feature p {
   padding-left: 5%;
