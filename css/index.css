@@ -1,0 +1,454 @@
+/*Mixins */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #2D8DD6;
+}
+html,
+body,
+p,
+a,
+button,
+li {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+p,
+a,
+.button,
+li {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.container {
+  font-family: 'Open Sans', Arial, sans-serif;
+  max-width: 100%;
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+.blue-container {
+  color: #FFFFFF;
+  height: 395px;
+  width: 100%;
+}
+@media (max-width: 1165px) {
+  .blue-container {
+    width: 100%;
+    height: 950px;
+  }
+}
+@media (max-width: 680px) {
+  .blue-container {
+    height: 800px;
+  }
+}
+@media (max-width: 500px) {
+  .blue-container {
+    height: 900px;
+  }
+}
+.white-container {
+  background-color: white;
+  padding-left: 20px;
+  border-top-left-radius: 20%;
+  margin-top: 60px;
+  width: 100%;
+}
+@media (max-width: 1165px) {
+  .white-container {
+    margin-top: -50px;
+    height: 900px;
+  }
+}
+@media (max-width: 500px) {
+  .white-container {
+    border-top-left-radius: 0%;
+    height: 1300px;
+    padding: 10px;
+  }
+}
+.site-nav {
+  background-color: #2D8DD6;
+  color: #FFFFFF;
+  display: flex;
+  position: fixed;
+  height: 10rem;
+  padding: 2rem 0 0 2%;
+  width: 100%;
+}
+@media (max-width: 1165px) {
+  .site-nav {
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+  }
+}
+.site-nav .top-bar {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1165px) {
+  .site-nav .top-bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .site-nav .top-bar {
+    width: 90%;
+  }
+}
+.site-nav .top-bar h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Comfortaa', Arial, sans-serif;
+  width: 35%;
+}
+@media (max-width: 1165px) {
+  .site-nav .top-bar h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+.site-nav .top-bar nav {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+@media (max-width: 1165px) {
+  .site-nav .top-bar nav {
+    width: 100%;
+    margin: 5% 0 5% 0;
+  }
+}
+.site-nav .top-bar nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 25px;
+}
+.site-nav .top-bar .button {
+  background-color: white;
+  color: #2D8DD6;
+  height: 3.3rem;
+  width: 200px;
+  text-align: center;
+  padding-top: 5px;
+  margin-right: 2%;
+}
+@media (max-width: 1165px) {
+  .site-nav .top-bar .button {
+    width: 250px;
+    margin: 0;
+  }
+}
+.banner {
+  background-color: #2D8DD6;
+  display: flex;
+  width: 100%;
+  height: 460px;
+  padding-top: 10rem;
+}
+@media (max-width: 1165px) {
+  .banner {
+    padding-top: 20rem;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+  }
+}
+.banner .description {
+  width: 70%;
+  padding: 3% 2% 4% 2%;
+}
+@media (max-width: 1165px) {
+  .banner .description {
+    width: 100%;
+    height: 45rem;
+    order: 1;
+  }
+}
+@media (max-width: 1165px) {
+  .banner .description {
+    height: 20rem;
+  }
+}
+.banner .description h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.banner .carousel {
+  width: 60%;
+}
+@media (max-width: 1165px) {
+  .banner .carousel {
+    width: 100%;
+    text-align: center;
+    background: white;
+    border-bottom-right-radius: 20%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 680px) {
+  .banner .carousel {
+    border-bottom-right-radius: 0%;
+  }
+}
+.banner .carousel img {
+  width: 650px;
+}
+@media (max-width: 1165px) {
+  .banner .carousel img {
+    width: 740px;
+  }
+}
+@media (max-width: 680px) {
+  .banner .carousel img {
+    width: 400px;
+  }
+}
+.countries {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 1165px) {
+}
+.countries h3 {
+  margin: 10px 0 15px 0;
+}
+.countries ul {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .countries ul {
+    display: block;
+  }
+}
+.countries ul li {
+  padding: 0 5% 0 6%;
+}
+@media (max-width: 1165px) {
+  .countries ul li {
+    padding: 0 2% 0 3%;
+  }
+}
+.features {
+  width: 100%;
+  display: flex;
+  padding: 4% 15% 0 15%;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1165px) {
+  .features {
+    padding: 2% 5% 0 5%;
+  }
+}
+@media (max-width: 1165px) {
+  .features h1 {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .features h1 {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+  }
+}
+.features .feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+@media (max-width: 1165px) {
+  .features .feature {
+    margin: 10px 0 10px 0;
+    width: 80%;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .features .feature {
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+  }
+}
+.features .feature p {
+  padding-left: 5%;
+}
+@media (max-width: 500px) {
+  .features .feature p {
+    padding: 0;
+    margin-top: 0px;
+  }
+}
