@@ -4,10 +4,10 @@
   <head>
     <meta charset='UTF-8'/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MicroMentor Bot</title>
+    <title>Mentors International</title>
     <link rel='stylesheet' href='css/index.css'/> 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans|Roboto" rel="stylesheet">
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js" async></script>
 </head>
 
   <body>
@@ -21,25 +21,33 @@
                     <h1>mentors international</h1>
 
                     <nav>
-                        <a href='#'>Home</a>
-                        <a href='#'>About</a>
-                        <a href='#'>Log In</a>
+                        <a class='link' href='#'>Home</a>
+                        <a class='link' href='#'>About</a>
+                        <a class='link' href='https://mentors-intl.netlify.com/'>Log In</a>
                     </nav>
 
-                    <div class='button'>SIGN UP</div> 
+                    <div onClick="window.location.href='https://mentors-intl.netlify.com/'" class='button'>SIGN UP</div>
 
                 </div>
             </header>
             
             <div class="banner">
                 <div class="description">
-                    <h2>Helping people connect without the effort.</h2>
-                    <p> Our messaging app saves time by helping our mentors message with mentee entrepreneurs all over the world. </p><br>
-                    <p> We make it easier for mentors to send out reminders as well as communicate with students about upcoming meetings.</p>
+                    <h2 class="text-focus-in">Helping people connect without the effort.</h2>
+                    <p class="tracking-in-expand"> Our messaging app saves time by helping our mentors message with mentee entrepreneurs all over the world. </p><br>
+                    <p class="tracking-in-expand"> We make it easier for mentors to send out reminders as well as communicate with students about upcoming meetings.</p>
                 </div>
+
+
                 <div class="carousel">
+                    <div class="left-button"><</div>
                     <img src="/images/laptop.jpg" alt="this will be a carousel">
+                    <img src="/images/adults.jpg" alt="this will be a carousel">
+                    <img src="/images/womenandman.jpg" alt="this will be a carousel">
+                    <div class="right-button">></div>
                 </div>
+
+                
             </div> <!--banner end-->
         </div> 
         
@@ -58,27 +66,27 @@
             
             <div class="features">
 
-            <h1>Keep in touch with the right tools.</h1>
+            <h1 class="text-focus-in">Keep in touch with the right tools.</h1>
             
                 <div class="feature">
-                    <img src="/mentoricons/plane-trip-international.png" alt="this will be a logo">
-                    <p>Our email messaging to text reminder app lets our mentors connect with their mentees directly internationally without having to worry about international codes.
+                    <img class="slide-in-left" src="/mentoricons/plane-trip-international.png" alt="this will be a logo">
+                    <p class="tracking-in-expand">Our email messaging to text reminder app lets our mentors connect with their mentees directly internationally without having to worry about international codes.
                 </div>
                             
                 <div class="feature">
-                    <img src="/mentoricons/send-email-2.png" alt="this will be a logo">
-                    <p>Create and save messages to be sent via text using Twilio's API. The ability to reach students through texting means open communication between all parties. 
+                    <img class="slide-in-left" src="/mentoricons/send-email-2.png" alt="this will be a logo">
+                    <p class="tracking-in-expand">Create and save messages to be sent via text using Twilio's API. The ability to reach students through texting means open communication between all parties. 
                 </div>
 
                             
                 <div class="feature">
-                    <img src="/mentoricons/mood-happy.png" alt="this will be a logo">
-                    <p>Effective communication between mentor mentee pairs leaves both sides of the relationships feeling connected and happy.
+                    <img class="slide-in-left" src="/mentoricons/mood-happy.png" alt="this will be a logo">
+                    <p class="tracking-in-expand">Effective communication between mentor mentee pairs leaves both sides of the relationships feeling connected and happy.
                 </div>
             </div>
 
              <footer>
-            <p>Copyright</p>
+            <!-- <p>Copyright 2019</p> -->
         </footer>
         </div>
     </div> <!--container end-->
