@@ -1,4 +1,4 @@
-# Mentors International - chat app marketing page
+# Mentors International
 
 ## Table of contents
 
@@ -23,11 +23,11 @@ Project is created with:
 
 ## Credits
 
-Scrum Master: Sukhada Gholba
-Web UI: Lloyd Edwards, Larry Simiyu, Olympia Wojcik
-Web Front-End: CJ Tantay
-Web Backend: Daniel Mendez
-iOS: Jaspal
+- Scrum Master: Sukhada Gholba
+- Web UI: Lloyd Edwards, Larry Simiyu, Olympia Wojcik
+- Web Front-End: CJ Tantay
+- Web Backend: Daniel Mendez
+- iOS: Jaspal
 
 ## License
 
